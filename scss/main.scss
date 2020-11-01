@@ -1,0 +1,19 @@
+$bg-color: #303841;
+$txt-color: #fff;
+$body-font: "Lora", serif;
+$play-font: "Playfair Display", serif;
+$code-font: "Source Code Pro", monospace;
+
+body {
+  background: $bg-color;
+  color: $txt-color;
+  font-family: $body-font;
+}
+
+h1 {
+  font-family: $play-font;
+}
+
+h3 {
+  font-family: $code-font;
+}

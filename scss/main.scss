@@ -6,6 +6,7 @@ $code-font: "Source Code Pro", monospace;
 $accent-blue: #00adb5;
 $accent-green: #5fcc9c;
 $accent-pink: #f67280;
+$hero-img: "https://www.traceseattle.com/resourcefiles/homeimages/who1154re-260920-trace-restaurant-high-1.jpg?version=10202020225107";
 
 // Global styles
 body {
@@ -36,6 +37,8 @@ h3 {
 .cap {
   display: flex;
   height: 100px;
+  width: 95%;
+  margin: auto;
   flex-direction: row;
   align-items: baseline;
   margin-bottom: 100px;
@@ -63,10 +66,34 @@ h3 {
     height: 50px;
     font-family: $code-font;
     border-radius: 5px;
+    // Need to fix sizing, button grows with screen size
 
     &:hover {
       background: $accent-green;
       cursor: pointer;
+    }
+  }
+}
+.hero {
+  height: 520px;
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+  background: linear-gradient(
+    to right,
+    $accent-blue,
+    $accent-green,
+    $accent-pink
+  );
+
+  .hero-img {
+    background: #ccc;
+    height: 95%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

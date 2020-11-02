@@ -3,17 +3,70 @@ $txt-color: #fff;
 $body-font: "Lora", serif;
 $play-font: "Playfair Display", serif;
 $code-font: "Source Code Pro", monospace;
+$accent-blue: #00adb5;
+$accent-green: #5fcc9c;
+$accent-pink: #f67280;
 
+// Global styles
 body {
   background: $bg-color;
   color: $txt-color;
   font-family: $body-font;
+  font-size: 18px;
 }
-
 h1 {
   font-family: $play-font;
 }
-
 h3 {
   font-family: $code-font;
+}
+
+// Global class styles
+.italics {
+  font-style: italic;
+}
+.cap-item-width {
+  flex-basis: 100px;
+}
+.pd-1 {
+  padding: 1rem;
+}
+
+// Specific styles
+.cap {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 100px;
+
+  h1 {
+    flex-grow: 7;
+  }
+
+  h3 {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  p {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  button {
+    flex-grow: 1;
+    background: $accent-blue;
+    color: $txt-color;
+    border: $accent-blue;
+    width: 100px;
+    height: 50px;
+    font-family: $code-font;
+    border-radius: 5px;
+
+    &:hover {
+      background: $accent-green;
+      cursor: pointer;
+    }
+  }
 }

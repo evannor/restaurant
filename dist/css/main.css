@@ -66,6 +66,7 @@ h3 {
   margin: auto;
   padding: 50px;
   background: linear-gradient(to right, #00adb5, #5fcc9c, #f67280);
+  margin-bottom: 50px;
 }
 .hero .hero-img {
   background: #ccc;
@@ -75,6 +76,29 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#main-nav {
+  border: solid #fff;
+}
+#main-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+#main-nav ul li {
+  padding: 1rem 1.5rem;
+}
+#main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+#main-nav ul li a:hover {
+  border-color: #5fcc9c;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,6 @@ $code-font: "Source Code Pro", monospace;
 $accent-blue: #00adb5;
 $accent-green: #5fcc9c;
 $accent-pink: #f67280;
-$hero-img: "https://www.traceseattle.com/resourcefiles/homeimages/who1154re-260920-trace-restaurant-high-1.jpg?version=10202020225107";
 
 // Global styles
 body {
@@ -85,6 +84,7 @@ h3 {
     $accent-green,
     $accent-pink
   );
+  margin-bottom: 50px;
 
   .hero-img {
     background: #ccc;
@@ -94,6 +94,32 @@ h3 {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+#main-nav {
+  border: solid $txt-color;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: $txt-color;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+          border-color: $accent-green;
+        }
+      }
     }
   }
 }

@@ -101,4 +101,32 @@ h3 {
   border-color: #5fcc9c;
 }
 
+#home-welcome-info {
+  text-align: center;
+  margin-top: 50px;
+}
+#home-welcome-info .color-block {
+  height: 800px;
+  width: 400px;
+  background-color: #f67280;
+  transform: skew(40deg);
+  margin: auto;
+}
+#home-welcome-info .color-block .restaurant-info {
+  transform: skew(-40deg);
+  z-index: 1;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  margin-left: 300px;
+}
+#home-welcome-info .color-block .restaurant-info p {
+  padding: 100px 75px 0;
+}
+#home-welcome-info .color-block .restaurant-info img {
+  margin-left: -400px;
+}
+
 /*# sourceMappingURL=main.css.map */

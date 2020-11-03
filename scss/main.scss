@@ -31,6 +31,12 @@ h3 {
 .pd-1 {
   padding: 1rem;
 }
+// .color-block {
+//   height: 200px;
+//   width: 250px;
+//   transform: skew(20deg);
+//   background-color: $accent-pink;
+// }
 
 // Specific styles
 .cap {
@@ -119,6 +125,34 @@ h3 {
         &:hover {
           border-color: $accent-green;
         }
+      }
+    }
+  }
+}
+
+#home-welcome-info {
+  text-align: center;
+  margin-top: 50px;
+  .color-block {
+    height: 800px;
+    width: 400px;
+    background-color: $accent-pink;
+    transform: skew(40deg);
+    margin: auto;
+    .restaurant-info {
+      transform: skew(-40deg);
+      z-index: 1;
+      height: 600px;
+      width: 600px;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #000;
+      margin-left: 300px;
+      p {
+        padding: 100px 75px 0;
+      }
+      img {
+        margin-left: -400px;
       }
     }
   }

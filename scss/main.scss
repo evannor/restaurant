@@ -16,9 +16,11 @@ body {
 }
 h1 {
   font-family: $play-font;
+  color: $accent-blue;
 }
 h3 {
   font-family: $code-font;
+  color: $accent-green;
 }
 
 // Global class styles
@@ -31,12 +33,6 @@ h3 {
 .pd-1 {
   padding: 1rem;
 }
-// .color-block {
-//   height: 200px;
-//   width: 250px;
-//   transform: skew(20deg);
-//   background-color: $accent-pink;
-// }
 
 // Specific styles
 .cap {
@@ -71,7 +67,7 @@ h3 {
     height: 50px;
     font-family: $code-font;
     border-radius: 5px;
-    // Need to fix sizing, button grows with screen size
+    max-width: 150px;
 
     &:hover {
       background: $accent-green;
@@ -133,12 +129,14 @@ h3 {
 #home-welcome-info {
   text-align: center;
   margin-top: 50px;
+
   .color-block {
     height: 800px;
     width: 400px;
     background-color: $accent-pink;
     transform: skew(40deg);
     margin: auto;
+
     .restaurant-info {
       transform: skew(-40deg);
       z-index: 1;
@@ -148,12 +146,53 @@ h3 {
       background-color: #fff;
       color: #000;
       margin-left: 300px;
+
       p {
         padding: 100px 75px 0;
       }
+
       img {
         margin-left: -400px;
       }
+    }
+  }
+}
+
+#home-hours-open {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin: 100px 0;
+}
+
+#happy-hour-menus {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  h1 {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .food {
+    h3 {
+      grid-column: 1 / span 2;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .wine {
+    ul {
+      list-style: none;
     }
   }
 }

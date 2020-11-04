@@ -7,10 +7,12 @@ body {
 
 h1 {
   font-family: "Playfair Display", serif;
+  color: #00adb5;
 }
 
 h3 {
   font-family: "Source Code Pro", monospace;
+  color: #5fcc9c;
 }
 
 .italics {
@@ -54,6 +56,7 @@ h3 {
   height: 50px;
   font-family: "Source Code Pro", monospace;
   border-radius: 5px;
+  max-width: 150px;
 }
 .cap button:hover {
   background: #5fcc9c;
@@ -127,6 +130,36 @@ h3 {
 }
 #home-welcome-info .color-block .restaurant-info img {
   margin-left: -400px;
+}
+
+#home-hours-open {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin: 100px 0;
+}
+
+#happy-hour-menus {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#happy-hour-menus h1 {
+  grid-column: 1/span 2;
+  text-align: center;
+}
+#happy-hour-menus h3 {
+  text-align: center;
+}
+#happy-hour-menus .food h3 {
+  grid-column: 1/span 2;
+}
+#happy-hour-menus .food ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#happy-hour-menus .wine ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@ body {
   color: #fff;
   font-family: "Lora", serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -13,6 +14,12 @@ h1 {
 h3 {
   font-family: "Source Code Pro", monospace;
   color: #5fcc9c;
+}
+
+button {
+  max-width: 200px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 .italics {
@@ -32,6 +39,18 @@ h3 {
 
 .pd-1 {
   padding: 1rem;
+}
+
+.pd-2 {
+  padding: 2rem;
+}
+
+.pd-3 {
+  padding: 3rem;
+}
+
+.mr-1 {
+  margin: 1rem;
 }
 
 .cap {
@@ -57,13 +76,9 @@ h3 {
 .cap button {
   flex-grow: 1;
   background: #00adb5;
-  color: #fff;
   border: #00adb5;
-  width: 100px;
-  height: 50px;
+  color: #fff;
   font-family: "Source Code Pro", monospace;
-  border-radius: 5px;
-  max-width: 150px;
 }
 .cap button:hover {
   background: #5fcc9c;
@@ -182,6 +197,47 @@ h3 {
 .food .color-block .food-info img {
   margin-left: 200px;
   margin-top: 150px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 100px;
+  height: 500px;
+}
+.contact-form .contact-info {
+  background: #5fcc9c;
+  color: #303841;
+  font-size: 1.25rem;
+}
+.contact-form .contact-info h2 {
+  text-decoration: underline;
+}
+.contact-form .contact-info p {
+  padding-left: 1rem;
+}
+.contact-form form {
+  background: #00adb5;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button {
+  border-radius: 5px;
+  border-color: #303841;
+}
+.contact-form form button {
+  background-color: #303841;
+  max-width: 300px;
+  border: #303841;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+}
+
+footer {
+  background: #fff;
+  color: #303841;
 }
 
 /*# sourceMappingURL=main.css.map */

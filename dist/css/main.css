@@ -23,6 +23,13 @@ h3 {
   flex-basis: 100px;
 }
 
+.color-block {
+  height: 800px;
+  width: 400px;
+  background-color: #f67280;
+  margin: auto;
+}
+
 .pd-1 {
   padding: 1rem;
 }
@@ -64,7 +71,7 @@ h3 {
 }
 
 .hero {
-  height: 520px;
+  height: 500px;
   width: 90%;
   margin: auto;
   padding: 50px;
@@ -104,18 +111,14 @@ h3 {
   border-color: #5fcc9c;
 }
 
-#home-welcome-info {
+.home-welcome-info {
   text-align: center;
   margin-top: 50px;
 }
-#home-welcome-info .color-block {
-  height: 800px;
-  width: 400px;
-  background-color: #f67280;
+.home-welcome-info .color-block {
   transform: skew(40deg);
-  margin: auto;
 }
-#home-welcome-info .color-block .restaurant-info {
+.home-welcome-info .color-block .restaurant-info {
   transform: skew(-40deg);
   z-index: 1;
   height: 600px;
@@ -125,41 +128,60 @@ h3 {
   color: #000;
   margin-left: 300px;
 }
-#home-welcome-info .color-block .restaurant-info p {
+.home-welcome-info .color-block .restaurant-info p {
   padding: 100px 75px 0;
 }
-#home-welcome-info .color-block .restaurant-info img {
+.home-welcome-info .color-block .restaurant-info img {
   margin-left: -400px;
 }
 
-#home-hours-open {
+.home-hours-open {
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
   margin: 100px 0;
 }
 
-#happy-hour-menus {
+.happy-hour-menus {
   display: grid;
   grid-template-columns: auto auto;
 }
-#happy-hour-menus h1 {
+.happy-hour-menus h1 {
   grid-column: 1/span 2;
   text-align: center;
 }
-#happy-hour-menus h3 {
+.happy-hour-menus h3 {
   text-align: center;
 }
-#happy-hour-menus .food h3 {
+.happy-hour-menus .food-menu h3 {
   grid-column: 1/span 2;
 }
-#happy-hour-menus .food ul {
+.happy-hour-menus .food-menu ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-#happy-hour-menus .wine ul {
+.happy-hour-menus .wine ul {
   list-style: none;
+}
+
+.food .color-block {
+  transform: skew(-40deg);
+}
+.food .color-block .food-info {
+  transform: skew(40deg);
+  padding-top: 100px;
+}
+.food .color-block .food-info h1 {
+  margin-left: -600px;
+  text-align: left;
+}
+.food .color-block .food-info p {
+  margin-left: -600px;
+}
+.food .color-block .food-info img {
+  margin-left: 200px;
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */

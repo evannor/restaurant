@@ -30,6 +30,12 @@ h3 {
 .cap-item-width {
   flex-basis: 100px;
 }
+.color-block {
+  height: 800px;
+  width: 400px;
+  background-color: $accent-pink;
+  margin: auto;
+}
 .pd-1 {
   padding: 1rem;
 }
@@ -76,7 +82,7 @@ h3 {
   }
 }
 .hero {
-  height: 520px;
+  height: 500px;
   width: 90%;
   margin: auto;
   padding: 50px;
@@ -126,16 +132,12 @@ h3 {
   }
 }
 
-#home-welcome-info {
+.home-welcome-info {
   text-align: center;
   margin-top: 50px;
 
   .color-block {
-    height: 800px;
-    width: 400px;
-    background-color: $accent-pink;
     transform: skew(40deg);
-    margin: auto;
 
     .restaurant-info {
       transform: skew(-40deg);
@@ -158,14 +160,14 @@ h3 {
   }
 }
 
-#home-hours-open {
+.home-hours-open {
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
   margin: 100px 0;
 }
 
-#happy-hour-menus {
+.happy-hour-menus {
   display: grid;
   grid-template-columns: auto auto;
 
@@ -178,7 +180,7 @@ h3 {
     text-align: center;
   }
 
-  .food {
+  .food-menu {
     h3 {
       grid-column: 1 / span 2;
     }
@@ -193,6 +195,30 @@ h3 {
   .wine {
     ul {
       list-style: none;
+    }
+  }
+}
+
+.food {
+  .color-block {
+    transform: skew(-40deg);
+    .food-info {
+      transform: skew(40deg);
+      padding-top: 100px;
+
+      h1 {
+        margin-left: -600px;
+        text-align: left;
+      }
+
+      p {
+        margin-left: -600px;
+      }
+
+      img {
+        margin-left: 200px;
+        margin-top: 150px;
+      }
     }
   }
 }

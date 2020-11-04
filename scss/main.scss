@@ -13,7 +13,7 @@ body {
   color: $txt-color;
   font-family: $body-font;
   font-size: 18px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 h1 {
   font-family: $play-font;
@@ -279,4 +279,49 @@ button {
 footer {
   background: $txt-color;
   color: $bg-color;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .restaurant-contact {
+    padding-left: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .company-links {
+    h3 {
+      color: $bg-color;
+    }
+
+    ul {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $accent-pink;
+
+        &:hover {
+          color: $accent-green;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    text-align: right;
+    margin: auto;
+
+    a {
+      color: $accent-pink;
+      margin: 0 1rem;
+
+      &:hover {
+        color: $accent-green;
+        cursor: pointer;
+      }
+    }
+  }
 }

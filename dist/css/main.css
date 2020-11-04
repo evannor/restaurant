@@ -3,7 +3,6 @@ body {
   color: #fff;
   font-family: "Lora", serif;
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -238,6 +237,40 @@ button {
 footer {
   background: #fff;
   color: #303841;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .restaurant-contact {
+  padding-left: 1rem;
+}
+footer .restaurant-contact p {
+  margin: 0;
+}
+footer .company-links h3 {
+  color: #303841;
+}
+footer .company-links ul {
+  list-style: none;
+}
+footer .company-links ul a {
+  text-decoration: none;
+  color: #f67280;
+}
+footer .company-links ul a:hover {
+  color: #5fcc9c;
+  cursor: pointer;
+}
+footer .social-links {
+  text-align: right;
+  margin: auto;
+}
+footer .social-links a {
+  color: #f67280;
+  margin: 0 1rem;
+}
+footer .social-links a:hover {
+  color: #5fcc9c;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

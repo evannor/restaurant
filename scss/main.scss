@@ -13,7 +13,7 @@ body {
   color: $txt-color;
   font-family: $body-font;
   font-size: 18px;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 h1 {
   font-family: $play-font;
@@ -42,6 +42,14 @@ button {
   background-color: $accent-pink;
   margin: auto;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 99%;
+}
+.sticky + .home-welcome-info {
+  padding-top: 250px;
+}
 .pd-1 {
   padding: 1rem;
 }
@@ -53,6 +61,9 @@ button {
 }
 .mr-1 {
   margin: 1rem;
+}
+.mrb {
+  margin-bottom: 50px;
 }
 
 // Specific styles
@@ -92,6 +103,7 @@ button {
     }
   }
 }
+
 .hero {
   height: 500px;
   width: 90%;
@@ -103,7 +115,7 @@ button {
     $accent-green,
     $accent-pink
   );
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 
   .hero-img {
     background: #ccc;
@@ -118,7 +130,10 @@ button {
 }
 
 #main-nav {
+  overflow: hidden;
+  background-color: $bg-color;
   border: solid $txt-color;
+  z-index: 1;
   ul {
     list-style-type: none;
     display: flex;
@@ -145,7 +160,7 @@ button {
 
 .home-welcome-info {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 200px;
 
   .color-block {
     transform: skew(40deg);
@@ -175,7 +190,7 @@ button {
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
-  margin: 100px 0;
+  margin: 200px 0;
 }
 
 .happy-hour-menus {
@@ -211,6 +226,7 @@ button {
 }
 
 .food {
+  margin-top: 200px;
   .color-block {
     transform: skew(-40deg);
     .food-info {
@@ -272,6 +288,11 @@ button {
       border: $bg-color;
       color: $txt-color;
       font-family: $code-font;
+
+      &:hover {
+        background: $accent-green;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -281,6 +302,7 @@ footer {
   color: $bg-color;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
 
   .restaurant-contact {
     padding-left: 1rem;
@@ -300,7 +322,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: $accent-pink;
+        color: $bg-color;
 
         &:hover {
           color: $accent-green;
@@ -315,7 +337,7 @@ footer {
     margin: auto;
 
     a {
-      color: $accent-pink;
+      color: $bg-color;
       margin: 0 1rem;
 
       &:hover {

@@ -34,6 +34,14 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 1rem 1.5rem;
+}
+
 .italics {
   font-style: italic;
 }
@@ -60,7 +68,15 @@ img {
 }
 
 .sticky + .home-welcome-info {
-  padding-top: 250px;
+  padding-top: 100px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.pd {
+  padding: 50px;
 }
 
 .pd-1 {
@@ -75,12 +91,36 @@ img {
   padding: 3rem;
 }
 
+.pdt-1 {
+  padding-top: 100px;
+}
+
+.pdl-rem {
+  padding-left: 1rem;
+}
+
 .mr-1 {
   margin: 1rem;
 }
 
 .mrb {
   margin-bottom: 50px;
+}
+
+.mrb-2 {
+  margin-bottom: 200px;
+}
+
+.mrt-1 {
+  margin-top: 100px;
+}
+
+.mrt-2 {
+  margin-top: 200px;
+}
+
+.mrtb-2 {
+  margin: 200px 0;
 }
 
 .cap {
@@ -90,7 +130,6 @@ img {
   margin: auto;
   flex-direction: row;
   align-items: baseline;
-  margin-bottom: 100px;
 }
 .cap h1 {
   flex-grow: 7;
@@ -119,9 +158,7 @@ img {
   height: 500px;
   width: 90%;
   margin: auto;
-  padding: 50px;
   background: linear-gradient(to right, #00adb5, #5fcc9c, #f67280);
-  margin-bottom: 200px;
 }
 .hero .hero-img {
   background: #ccc;
@@ -140,12 +177,8 @@ img {
   z-index: 1;
 }
 #main-nav ul {
-  list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-}
-#main-nav ul li {
-  padding: 1rem 1.5rem;
 }
 #main-nav ul li a {
   text-decoration: none;
@@ -159,10 +192,6 @@ img {
   border-color: #5fcc9c;
 }
 
-.home-welcome-info {
-  text-align: center;
-  margin-top: 200px;
-}
 .home-welcome-info .color-block {
   transform: skew(40deg);
 }
@@ -188,7 +217,6 @@ img {
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
-  margin: 200px 0;
 }
 
 .happy-hour-menus {
@@ -206,7 +234,6 @@ img {
   grid-column: 1/span 2;
 }
 .happy-hour-menus .food-menu ul {
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -214,15 +241,11 @@ img {
   list-style: none;
 }
 
-.food {
-  margin-top: 200px;
-}
 .food .color-block {
   transform: skew(-40deg);
 }
 .food .color-block .food-info {
   transform: skew(40deg);
-  padding-top: 100px;
 }
 .food .color-block .food-info h1 {
   margin-left: -600px;
@@ -239,7 +262,6 @@ img {
 .contact-form {
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 100px;
   height: 600px;
 }
 .contact-form .contact-info {
@@ -250,9 +272,6 @@ img {
 }
 .contact-form .contact-info h2 {
   text-decoration: underline;
-}
-.contact-form .contact-info p {
-  padding-left: 1rem;
 }
 .contact-form form {
   background: #00adb5;
@@ -289,17 +308,14 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
 }
-footer .restaurant-contact {
-  padding-left: 1rem;
-}
 footer .restaurant-contact p {
   margin: 0;
 }
 footer .company-links h3 {
   color: #303841;
 }
-footer .company-links ul {
-  list-style: none;
+footer .company-links ul:last-child {
+  padding-bottom: 0;
 }
 footer .company-links ul a {
   text-decoration: none;

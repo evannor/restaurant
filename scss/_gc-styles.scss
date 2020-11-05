@@ -1,0 +1,63 @@
+// Global class styles
+.italics {
+  font-style: italic;
+}
+.cap-item-width {
+  flex-basis: 100px;
+}
+.color-block {
+  height: 800px;
+  width: 400px;
+  background-color: $accent-pink;
+  margin: auto;
+}
+.title-space {
+  letter-spacing: 3px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 99%;
+}
+.sticky + .home-welcome-info {
+  padding-top: 100px;
+}
+.txt-center {
+  text-align: center;
+}
+.pd {
+  padding: 50px;
+}
+.pd-1 {
+  padding: 1rem;
+}
+.pd-2 {
+  padding: 2rem;
+}
+.pd-3 {
+  padding: 3rem;
+}
+.pdt-1 {
+  padding-top: 100px;
+}
+.pdl-rem {
+  padding-left: 1rem;
+}
+.mr-1 {
+  margin: 1rem;
+}
+.mrb {
+  margin-bottom: 50px;
+}
+.mrb-2 {
+  margin-bottom: 200px;
+}
+.mrt-1 {
+  margin-top: 100px;
+}
+.mrt-2 {
+  margin-top: 200px;
+}
+.mrtb-2 {
+  margin: 200px 0;
+}

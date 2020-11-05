@@ -123,6 +123,118 @@ li {
   margin: 200px 0;
 }
 
+.home-welcome-info .color-block {
+  transform: skew(40deg);
+}
+.home-welcome-info .color-block .restaurant-info {
+  transform: skew(-40deg);
+  z-index: 1;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.799;
+  margin-left: 300px;
+}
+.home-welcome-info .color-block .restaurant-info p {
+  padding: 100px 75px 0;
+}
+.home-welcome-info .color-block .restaurant-info img {
+  margin-left: -100%;
+}
+
+.home-hours-open {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.happy-hour-menus {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.happy-hour-menus h1 {
+  grid-column: 1/span 2;
+  text-align: center;
+}
+.happy-hour-menus h3 {
+  text-align: center;
+}
+.happy-hour-menus .food-menu h3 {
+  grid-column: 1/span 2;
+}
+.happy-hour-menus .food-menu ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.happy-hour-menus .wine {
+  padding-left: 0;
+}
+.happy-hour-menus .wine ul {
+  list-style: none;
+}
+
+.food .color-block {
+  transform: skew(-40deg);
+}
+.food .color-block .food-info {
+  transform: skew(40deg);
+}
+.food .color-block .food-info h1 {
+  margin-left: -100%;
+  text-align: left;
+}
+.food .color-block .food-info p {
+  margin-left: -100%;
+}
+.food .color-block .food-info img {
+  margin-left: 200px;
+  margin-top: 150px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 600px;
+}
+.contact-form .contact-info {
+  background: #5fcc9c;
+  color: #303841;
+  font-size: 1.25rem;
+  padding: 200px 0 200px 200px;
+}
+.contact-form .contact-info h2 {
+  text-decoration: underline;
+}
+.contact-form form {
+  background: #00adb5;
+  color: #303841;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input {
+  width: 40%;
+}
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button {
+  border-radius: 5px;
+  border-color: #303841;
+}
+.contact-form form button {
+  background-color: #303841;
+  max-width: 300px;
+  border: #303841;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+}
+.contact-form form button:hover {
+  background: #5fcc9c;
+  cursor: pointer;
+}
+
 .cap {
   display: flex;
   height: 100px;
@@ -190,115 +302,6 @@ li {
 }
 #main-nav ul li a:hover {
   border-color: #5fcc9c;
-}
-
-.home-welcome-info .color-block {
-  transform: skew(40deg);
-}
-.home-welcome-info .color-block .restaurant-info {
-  transform: skew(-40deg);
-  z-index: 1;
-  height: 600px;
-  width: 600px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #000;
-  line-height: 1.799;
-  margin-left: 300px;
-}
-.home-welcome-info .color-block .restaurant-info p {
-  padding: 100px 75px 0;
-}
-.home-welcome-info .color-block .restaurant-info img {
-  margin-left: -400px;
-}
-
-.home-hours-open {
-  display: grid;
-  grid-template-columns: auto auto;
-  text-align: center;
-}
-
-.happy-hour-menus {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.happy-hour-menus h1 {
-  grid-column: 1/span 2;
-  text-align: center;
-}
-.happy-hour-menus h3 {
-  text-align: center;
-}
-.happy-hour-menus .food-menu h3 {
-  grid-column: 1/span 2;
-}
-.happy-hour-menus .food-menu ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.happy-hour-menus .wine ul {
-  list-style: none;
-}
-
-.food .color-block {
-  transform: skew(-40deg);
-}
-.food .color-block .food-info {
-  transform: skew(40deg);
-}
-.food .color-block .food-info h1 {
-  margin-left: -600px;
-  text-align: left;
-}
-.food .color-block .food-info p {
-  margin-left: -600px;
-}
-.food .color-block .food-info img {
-  margin-left: 200px;
-  margin-top: 150px;
-}
-
-.contact-form {
-  display: grid;
-  grid-template-columns: auto auto;
-  height: 600px;
-}
-.contact-form .contact-info {
-  background: #5fcc9c;
-  color: #303841;
-  font-size: 1.25rem;
-  padding: 200px 0 200px 200px;
-}
-.contact-form .contact-info h2 {
-  text-decoration: underline;
-}
-.contact-form form {
-  background: #00adb5;
-  color: #303841;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-}
-.contact-form form input {
-  width: 35%;
-}
-.contact-form form input,
-.contact-form form textarea,
-.contact-form form button {
-  border-radius: 5px;
-  border-color: #303841;
-}
-.contact-form form button {
-  background-color: #303841;
-  max-width: 300px;
-  border: #303841;
-  color: #fff;
-  font-family: "Source Code Pro", monospace;
-}
-.contact-form form button:hover {
-  background: #5fcc9c;
-  cursor: pointer;
 }
 
 footer {

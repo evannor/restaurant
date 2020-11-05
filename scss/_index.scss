@@ -1,0 +1,134 @@
+.home-welcome-info {
+  .color-block {
+    transform: skew(40deg);
+
+    .restaurant-info {
+      transform: skew(-40deg);
+      z-index: 1;
+      height: 600px;
+      width: 600px;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.799;
+      margin-left: 300px;
+
+      p {
+        padding: 100px 75px 0;
+      }
+
+      img {
+        margin-left: -100%;
+      }
+    }
+  }
+}
+
+.home-hours-open {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.happy-hour-menus {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  h1 {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .food-menu {
+    h3 {
+      grid-column: 1 / span 2;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .wine {
+    padding-left: 0;
+    ul {
+      list-style: none;
+    }
+  }
+}
+
+.food {
+  .color-block {
+    transform: skew(-40deg);
+    .food-info {
+      transform: skew(40deg);
+      h1 {
+        margin-left: -100%;
+        text-align: left;
+      }
+
+      p {
+        margin-left: -100%;
+      }
+
+      img {
+        margin-left: 200px;
+        margin-top: 150px;
+      }
+    }
+  }
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 600px;
+
+  .contact-info {
+    background: $accent-green;
+    color: $bg-color;
+    font-size: 1.25rem;
+    padding: 200px 0 200px 200px;
+
+    h2 {
+      text-decoration: underline;
+    }
+  }
+
+  form {
+    background: $accent-blue;
+    color: $bg-color;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 40%;
+    }
+
+    input,
+    textarea,
+    button {
+      border-radius: 5px;
+      border-color: $bg-color;
+    }
+
+    button {
+      background-color: $bg-color;
+      max-width: 300px;
+      border: $bg-color;
+      color: $txt-color;
+      font-family: $code-font;
+
+      &:hover {
+        background: $accent-green;
+        cursor: pointer;
+      }
+    }
+  }
+}

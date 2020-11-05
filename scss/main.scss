@@ -28,6 +28,17 @@ button {
   height: 50px;
   border-radius: 5px;
 }
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: $txt-color;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 // Global class styles
 .italics {
@@ -41,6 +52,9 @@ button {
   width: 400px;
   background-color: $accent-pink;
   margin: auto;
+}
+.title-space {
+  letter-spacing: 3px;
 }
 .sticky {
   position: fixed;
@@ -173,6 +187,7 @@ button {
       border-radius: 50%;
       background-color: #fff;
       color: #000;
+      line-height: 1.799;
       margin-left: 300px;
 
       p {
@@ -254,12 +269,13 @@ button {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 100px;
-  height: 500px;
+  height: 600px;
 
   .contact-info {
     background: $accent-green;
     color: $bg-color;
     font-size: 1.25rem;
+    padding: 200px 0 200px 200px;
 
     h2 {
       text-decoration: underline;
@@ -272,8 +288,14 @@ button {
 
   form {
     background: $accent-blue;
+    color: $bg-color;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
+
+    input {
+      width: 35%;
+    }
 
     input,
     textarea,
@@ -324,9 +346,17 @@ footer {
         text-decoration: none;
         color: $bg-color;
 
+        &:first-child:hover {
+          color: $accent-green;
+        }
+
         &:hover {
           color: $accent-green;
           cursor: pointer;
+        }
+
+        &:visited {
+          color: $bg-color;
         }
       }
     }

@@ -7,8 +7,8 @@
 
     .restaurant-info {
       transform: skew(-40deg);
-      height: 600px;
-      width: 600px;
+      height: 500px;
+      width: 500px;
       border-radius: 50%;
       background-color: #fff;
       color: #000;
@@ -79,7 +79,6 @@
       }
 
       img {
-        // margin-left: 200px;
         position: relative;
         left: 200%;
         margin-top: 50%;
@@ -132,6 +131,32 @@
       &:hover {
         background: variables.$accent-green;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1310px) {
+  .food {
+    .color-block {
+      .food-info {
+        right: 50%;
+        img {
+          left: 125%;
+          margin-top: 50%;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    height: 500px;
+    .contact-info {
+      padding: 150px 0 150px 50px;
+    }
+    form {
+      input {
+        width: 75%;
       }
     }
   }

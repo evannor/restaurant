@@ -42,6 +42,11 @@ li {
   padding: 1rem 1.5rem;
 }
 
+@media (max-width: 1050px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 .italics {
   font-style: italic;
 }
@@ -51,7 +56,7 @@ li {
 }
 
 .color-block {
-  height: 800px;
+  height: 700px;
   width: 400px;
   background-color: #f67280;
   margin: auto;
@@ -64,7 +69,7 @@ li {
 .sticky {
   position: fixed;
   top: 0;
-  width: 99%;
+  width: 98%;
 }
 
 .sticky + .home-welcome-info {
@@ -129,8 +134,8 @@ li {
 }
 .home-welcome-info .color-block .restaurant-info {
   transform: skew(-40deg);
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   background-color: #fff;
   color: #000;
@@ -237,6 +242,25 @@ li {
   cursor: pointer;
 }
 
+@media (max-width: 1310px) {
+  .food .color-block .food-info {
+    right: 50%;
+  }
+  .food .color-block .food-info img {
+    left: 125%;
+    margin-top: 50%;
+  }
+
+  .contact-form {
+    height: 500px;
+  }
+  .contact-form .contact-info {
+    padding: 150px 0 150px 50px;
+  }
+  .contact-form form input {
+    width: 75%;
+  }
+}
 .cap {
   display: flex;
   height: 100px;
@@ -347,6 +371,18 @@ footer .social-links a {
 footer .social-links a:hover {
   color: #5fcc9c;
   cursor: pointer;
+}
+
+@media (max-width: 1310px) {
+  footer {
+    padding: 0;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1050px) {
+  #main-nav {
+    width: 1000px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

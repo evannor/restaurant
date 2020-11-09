@@ -125,23 +125,25 @@ li {
 
 .home-welcome-info .color-block {
   transform: skew(40deg);
+  position: relative;
 }
 .home-welcome-info .color-block .restaurant-info {
   transform: skew(-40deg);
-  z-index: 1;
   height: 600px;
   width: 600px;
   border-radius: 50%;
   background-color: #fff;
   color: #000;
-  line-height: 1.799;
-  margin-left: 300px;
+  line-height: 1.8;
+  position: relative;
+  left: 50%;
 }
 .home-welcome-info .color-block .restaurant-info p {
   padding: 100px 75px 0;
 }
 .home-welcome-info .color-block .restaurant-info img {
-  margin-left: -100%;
+  position: relative;
+  right: 60%;
 }
 
 .home-hours-open {
@@ -177,20 +179,20 @@ li {
 
 .food .color-block {
   transform: skew(-40deg);
+  position: relative;
 }
 .food .color-block .food-info {
   transform: skew(40deg);
+  position: relative;
+  right: 100%;
 }
 .food .color-block .food-info h1 {
-  margin-left: -100%;
   text-align: left;
 }
-.food .color-block .food-info p {
-  margin-left: -100%;
-}
 .food .color-block .food-info img {
-  margin-left: 200px;
-  margin-top: 150px;
+  position: relative;
+  left: 200%;
+  margin-top: 50%;
 }
 
 .contact-form {

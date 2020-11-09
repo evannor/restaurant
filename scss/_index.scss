@@ -3,24 +3,26 @@
 .home-welcome-info {
   .color-block {
     transform: skew(40deg);
+    position: relative;
 
     .restaurant-info {
       transform: skew(-40deg);
-      z-index: 1;
       height: 600px;
       width: 600px;
       border-radius: 50%;
       background-color: #fff;
       color: #000;
-      line-height: 1.799;
-      margin-left: 300px;
+      line-height: 1.8;
+      position: relative;
+      left: 50%;
 
       p {
         padding: 100px 75px 0;
       }
 
       img {
-        margin-left: -100%;
+        position: relative;
+        right: 60%;
       }
     }
   }
@@ -67,20 +69,20 @@
 .food {
   .color-block {
     transform: skew(-40deg);
+    position: relative;
     .food-info {
       transform: skew(40deg);
+      position: relative;
+      right: 100%;
       h1 {
-        margin-left: -100%;
         text-align: left;
       }
 
-      p {
-        margin-left: -100%;
-      }
-
       img {
-        margin-left: 200px;
-        margin-top: 150px;
+        // margin-left: 200px;
+        position: relative;
+        left: 200%;
+        margin-top: 50%;
       }
     }
   }

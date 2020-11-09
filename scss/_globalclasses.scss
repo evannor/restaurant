@@ -1,3 +1,5 @@
+@use "variables";
+
 // Global class styles
 .italics {
   font-style: italic;
@@ -8,7 +10,7 @@
 .color-block {
   height: 800px;
   width: 400px;
-  background-color: $accent-pink;
+  background-color: variables.$accent-pink;
   margin: auto;
 }
 .title-space {

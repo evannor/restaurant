@@ -1,7 +1,7 @@
-@import "variables";
-@import "g-styles";
-@import "gc-styles";
-@import "index";
+@use "variables";
+@use "global";
+@use "globalclasses";
+@use "index";
 
 // Specific styles index.html
 // Desktop first styling
@@ -29,13 +29,13 @@
 
   button {
     flex-grow: 1;
-    background: $accent-blue;
-    border: $accent-blue;
-    color: $txt-color;
-    font-family: $code-font;
+    background: variables.$accent-blue;
+    border: variables.$accent-blue;
+    color: variables.$txt-color;
+    font-family: variables.$code-font;
 
     &:hover {
-      background: $accent-green;
+      background: variables.$accent-green;
       cursor: pointer;
     }
   }
@@ -47,9 +47,9 @@
   margin: auto;
   background: linear-gradient(
     to right,
-    $accent-blue,
-    $accent-green,
-    $accent-pink
+    variables.$accent-blue,
+    variables.$accent-green,
+    variables.$accent-pink
   );
 
   .hero-img {
@@ -66,8 +66,8 @@
 
 #main-nav {
   overflow: hidden;
-  background-color: $bg-color;
-  border: solid $txt-color;
+  background-color: variables.$bg-color;
+  border: solid variables.$txt-color;
   z-index: 1;
   ul {
     display: flex;
@@ -76,14 +76,14 @@
     li {
       a {
         text-decoration: none;
-        color: $txt-color;
+        color: variables.$txt-color;
         text-transform: uppercase;
         border-bottom: 3px transparent solid;
         padding-bottom: 0.5rem;
         transition: border-color 0.5s;
 
         &:hover {
-          border-color: $accent-green;
+          border-color: variables.$accent-green;
         }
       }
     }
@@ -91,8 +91,8 @@
 }
 
 footer {
-  background: $txt-color;
-  color: $bg-color;
+  background: variables.$txt-color;
+  color: variables.$bg-color;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
@@ -105,7 +105,7 @@ footer {
 
   .company-links {
     h3 {
-      color: $bg-color;
+      color: variables.$bg-color;
     }
 
     ul {
@@ -114,19 +114,19 @@ footer {
       }
       a {
         text-decoration: none;
-        color: $bg-color;
+        color: variables.$bg-color;
 
         &:first-child:hover {
-          color: $accent-green;
+          color: variables.$accent-green;
         }
 
         &:hover {
-          color: $accent-green;
+          color: variables.$accent-green;
           cursor: pointer;
         }
 
         &:visited {
-          color: $bg-color;
+          color: variables.$bg-color;
         }
       }
     }
@@ -137,11 +137,11 @@ footer {
     margin: auto;
 
     a {
-      color: $bg-color;
+      color: variables.$bg-color;
       margin: 0 1rem;
 
       &:hover {
-        color: $accent-green;
+        color: variables.$accent-green;
         cursor: pointer;
       }
     }

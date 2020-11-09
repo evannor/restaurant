@@ -1,3 +1,5 @@
+@use "variables";
+
 .home-welcome-info {
   .color-block {
     transform: skew(40deg);
@@ -90,8 +92,8 @@
   height: 600px;
 
   .contact-info {
-    background: $accent-green;
-    color: $bg-color;
+    background: variables.$accent-green;
+    color: variables.$bg-color;
     font-size: 1.25rem;
     padding: 200px 0 200px 200px;
 
@@ -101,8 +103,8 @@
   }
 
   form {
-    background: $accent-blue;
-    color: $bg-color;
+    background: variables.$accent-blue;
+    color: variables.$bg-color;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -115,18 +117,18 @@
     textarea,
     button {
       border-radius: 5px;
-      border-color: $bg-color;
+      border-color: variables.$bg-color;
     }
 
     button {
-      background-color: $bg-color;
+      background-color: variables.$bg-color;
       max-width: 300px;
-      border: $bg-color;
-      color: $txt-color;
-      font-family: $code-font;
+      border: variables.$bg-color;
+      color: variables.$txt-color;
+      font-family: variables.$code-font;
 
       &:hover {
-        background: $accent-green;
+        background: variables.$accent-green;
         cursor: pointer;
       }
     }

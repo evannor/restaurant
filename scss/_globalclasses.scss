@@ -18,11 +18,14 @@
 }
 .sticky {
   position: fixed;
-  top: 0;
+  top: 5px;
   width: 98%;
 }
 .sticky + .home-welcome-info {
   padding-top: 100px;
+}
+.sticky + .title-space {
+  padding-top: 75px;
 }
 .txt-center {
   text-align: center;
